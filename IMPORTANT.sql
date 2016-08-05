@@ -1,0 +1,2 @@
+sqlite> UPDATE BigTable SET BID = (SELECT BID from Brought where BigTable.DEPREDATION_METHOD= Brought.DEPREDATION_METHOD and BigTable.TRAP= Brought.Trap and BigTable.PREPS= Brought.Prep);
+sqlite> SELECT BID FROM BigTable
